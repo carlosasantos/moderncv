@@ -1,0 +1,214 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{red}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% Custom imports
+\usepackage{multicol}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+% personal data
+%\name{Carlos A.}{Fernandes dos Santos}
+\firstname{Carlos A.}
+\familyname{Fernandes dos Santos}
+% \title{Résumé title}                               % optional, remove / comment the line if not wanted
+\born{24 November 1985}                                 % optional, remove / comment the line if not wanted
+\address{157 City Island Way}{E14 0TL}{London, United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(0)~7789~270394}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{carlosalexandre.santos@outlook.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[linkedin]{www.linkedin.com/in/carlosafsantos/}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+
+\social[github]{github.com/carlosasantoss}                              % optional, remove / comment the line if not wanted
+
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-2em}
+
+% Summary
+\section{Summary}
+Data Science Manager with a PhD in physics and 8+ years of hands-on experience in using Data Science and Artificial Intelligence to solve challenging academic and business problems, and to generate data-driven insights. Solid skills in python programming, mathematics, algorithms and cloud platforms. 
+
+- delivering / deploying machine learning solutions to production
+at scale
+managing teams 
+MLE Designs, builds and productionises ML models
+The MLE considers responsible AI throughout the ML development process
+
+
+A Professional Machine Learning Engineer designs, builds, and productionizes ML models to solve business challenges using Google Cloud technologies and knowledge of proven ML models and techniques. The ML Engineer considers responsible AI throughout the ML development process, and collaborates closely with other job roles to ensure long-term success of models.
+% Experience
+\section{Experience}
+% Microsoft
+\cventry[0.75em]{Jul 2021 -- Present}{Senior AI Specialised Cloud Solution Architect}{Microsoft}{London, UK}{}{
+\vspace{0.25em}
+\cvitem{Description}{lvasdvdvcadsv dfvdfvdfv dfvdfv dsfv dfvdf vdfv dfv dfv dv dsfvsdfvsdgbfsgb gb fgb fgb  dvdfvjvheviouydipfgcewyrnpgi rec8twp3e8wth pceor87the98t7h}
+\begin{itemize}
+\item Mention MLOps
+\end{itemize}
+}
+% Accenture
+\cventry[0.75em]{Dec 2019 -- Jun 2021}{Data Science Manager}{Accenture, Applied Intelligence}{London, UK}{}{
+\cvitem{}{\normalsize \emph{Data Science Consultant} \hfill \emph{Oct 2018 -- Nov 2019}}
+\cvitem{Description}{Data Science Manager within the Applied Intelligence team, and part of the wider Strategy \& Consulting practice. Key achievements include:}
+\begin{itemize}
+\item Leading a global cross-functional team of Data Scientists, ML Engineers, Data Engineers and Frontend developers to develop digital solutions to improve and optimise processing plants for a mining organisation. These solutions, developed in Python and deployed in Azure, are to be scaled to multiple mining plants globally, and support the business goal of generating \$100M of value from data analytics in 2020. 
+\item Managing, as the Data Science Lead, a team of 7 data scientists on a large project aiming to develop a solution that identifies product trends based on social media, for a large retail client. The solution is developed in Python, leverages NLP and ML techniques, and is deployed in GCP.  
+\item Managing a team of 5 analysts and consultants. Key responsibilities include finding and securing chargeable projects, coaching and support with career development.
+\end{itemize}}
+% Deloitte
+\cventry[0.75em]{Sep 2017 -- Oct 2018}{Senior Consultant / Data Scientist}{Deloitte UK}{London, UK}{}{
+\cvitem{}{\normalsize \emph{Consultant / Data Scientist} \hfill \emph{Feb 2016 -- Aug 2017}}
+\cvitem{Description}{Data Scientist within the Risk Analytics team and part of the wider Risk Advisory Practice. The role consists in developing data science solutions to help organisations, within financial services, to gain market insights, minimise risk or drive process improvement and efficiency. Key achievements include:}
+\begin{itemize}
+\item Developing a policy violation predictive model for a professional service firm, using Random Forests.
+\item Developing optimisation models for a Payment Protection Insurance (PPI) complaint operation, with a workforce of around 1000 people and approximately 100 000 complaints, for a large retail bank.
+\item Managing and developing a cognitive proof of concept, for a big four UK bank, to scrape and analyse large sets of news articles, in an automated way, aiming to support the credit underwriting process. This PoC was developed in Python and leveraged NLP and ML techniques.
+\item Developing of emotion, sentiment and topic models, leveraging NLP techniques in Python, to analyse audio files transcriptions, to automate the auditing process of several thousand hours of recorded phone calls, for a large insurance company.
+\end{itemize}}
+% PostDoc
+\cventry[0.75em]{Mar 2014 -- Jan 2016}{Postdoctoral Research Fellow}{Istituto Nazionale di Fisica Nucleare - Sezione di Trieste}{Trieste, Italy}{}{
+\vspace{0.25em}
+\cvitem{Description}{Postdoctoral research fellowship in the field of experimental particle physics, focused on the research and development of gaseous photon detectors dedicated to the studies of the nucleon structure. The work performed envisaged the upgrade of a large area detector of a major experiment at a world leading physics laboratory in Geneva – CERN, where a significant part of R\&D activities took place. The main activities included: 
+}
+\begin{itemize}
+\item Processing and analysis of comprehensive data sets to validate the R\&D carried out. Data processing and analysis performed using C/C++, Matlab and others, in Windows and Unix environments.
+\item Monte Carlo Simulations to study physics interactions.
+\item Development of hardware. 
+\item Management of data acquisition leading to a deep understanding of complex structured data.
+\item Supervision of undergraduate students in R\&D activities.
+\end{itemize}}
+
+% Education
+\section{Education}
+% PhD
+\cventry[0.75em]{Aveiro, Portugal}{\normalfont University of Aveiro}{Ph.D. in Physics}{\normalfont Oct 2009 -- Feb 2014}{}{
+\vspace{0.25em}
+\cvitem{Description}{Research thesis under the title “Thick-Microstructures for MPGDs: Simulation and Experimental Studies”. The research work was carried out between Aveiro, CERN and INFN Trieste.}}  % arguments 3 to 6 can be left empty
+% MSc
+\cventry[0.75em]{Aveiro, Portugal}{\normalfont University of Aveiro}{M.Sc. in Engineering Physics}{\normalfont Oct 2008 -- Jul 2009}{}{
+\vspace{0.25em}
+\cvitem{Description}{Research dissertation under the title: “Simulation of Electron Avalanches in Radiation Gaseous Detectors”.}}
+% BSc
+\cventry[0.75em]{Aveiro, Portugal}{\normalfont University of Aveiro}{B.Sc. in Engineering Physics }{\normalfont Sep 2004 -- Oct 2008}{}{
+\vspace{0.25em}
+\cvitem{Description}{Research project under the title: “Energy Weighting in a Single Photon Counting X-ray Detector based in a MHSP”.}}
+
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+% SECTION: Personal Skills and Competencies
+\section{Personal Skills and Competencies}
+% Languages
+\subsection{Languages}
+\vspace{-1.25em}
+\begin{multicols}{2}
+\begin{itemize}
+\item \textbf{English} \hspace{1.51em}  \cvskill{5} | Native Language 
+\item \textbf{Portuguese}  \cvskill{5} | Native Language
+\item \textbf{Italian} \hspace{-0.12em} \cvskill{3} | Level B2 
+\item \textbf{French} \cvskill{2} | Level B1
+\end{itemize}
+\end{multicols}
+
+% Soft Skills
+\subsection{Soft Skills}
+\vspace{-1.25em}
+\begin{multicols}{2}
+\begin{itemize}
+\item Problem Solver
+\item Critical Thinker
+\item Storyteller
+\item Good Communicator 
+\item Curious
+\end{itemize}
+\end{multicols}
+
+% Technical Skills
+\subsection{Technical Skills}
+\vspace{-1.25em}
+\begin{multicols}{2}
+\begin{itemize}
+\item Python  \hfill \cvskill{5}
+\item Matlab  \hfill \cvskill{4}
+\item R  \hfill \cvskill{3}
+\item C/C++  \hfill \cvskill{3}
+\item Pandas / Numpy / Scipy \hfill \cvskill{5}
+\item Scikit-learn \hfill \cvskill{5}
+\item TensorFlow / Keras \hfill \cvskill{4}
+\item Machine Learning / Deep Learning \hfill \cvskill{4}
+\item MLOps \hfill \cvskill{4}
+\item MLflow \hfill \cvskill{4}
+\item Bash/Unix \hfill \cvskill{4}
+\item SQL / NoSQL \hfill \cvskill{4}
+\item Microsoft Azure \hfill \cvskill{5}
+\item Google Cloud Platform \hfill \cvskill{3}
+\item Amazon Web Services \hfill \cvskill{2}
+\item Quantum Computing  \hfill \cvskill{3}
+\item Excel \hfill \cvskill{5}
+\item \LaTeX \hfill \cvskill{4}
+\end{itemize}
+\end{multicols}
+
+% Certifications
+\subsection{Certifications}
+\begin{itemize}
+\item Azure AI Engineer Associate
+\item Azure Data Scientist Associate
+\item Azure AI Fundamentals
+\item Azure Fundamentals
+\item Google Cloud Platform - Professional Data Engineer 
+\item Google Cloud Platform – Professional Cloud Architect  
+\item Google Cloud Platform - Associate Cloud Engineer 
+\item MIT Quantum Computing Fundamentals Online Program – a two-course certificate program to establish a foundation of knowledge for understanding the business implications of quantum computing. 
+\end{itemize}
+
+\end{document}
+
